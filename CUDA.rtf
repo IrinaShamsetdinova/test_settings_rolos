@@ -1,0 +1,90 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2709
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+tf-docker ~/project > python3 -c "import torch; print(torch.cuda.is_available())"\
+/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py:107: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:109.)\
+  return torch._C._cuda_getDeviceCount() > 0\
+False\
+tf-docker ~/project > python3 -m torch.util.collect_env\
+/usr/bin/python3: Error while finding module specification for 'torch.util.collect_env' (ModuleNotFoundError: No module named 'torch.util')\
+tf-docker ~/project > python3 -m torch.utils.collect_env\
+Collecting environment information...\
+/usr/local/lib/python3.10/dist-packages/torch/cuda/__init__.py:107: UserWarning: CUDA initialization: CUDA unknown error - this may be due to an incorrectly set up environment, e.g. changing env variable CUDA_VISIBLE_DEVICES after program start. Setting the available devices to be zero. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:109.)\
+  return torch._C._cuda_getDeviceCount() > 0\
+PyTorch version: 2.0.1+cu117\
+Is debug build: False\
+CUDA used to build PyTorch: 11.7\
+ROCM used to build PyTorch: N/A\
+\
+OS: Ubuntu 20.04.4 LTS (x86_64)\
+GCC version: (Ubuntu 9.4.0-1ubuntu1~20.04.1) 9.4.0\
+Clang version: Could not collect\
+CMake version: version 3.26.3\
+Libc version: glibc-2.31\
+\
+Python version: 3.10.11 (main, Apr  5 2023, 14:15:10) [GCC 9.4.0] (64-bit runtime)\
+Python platform: Linux-5.11.20-300.fc34.x86_64-x86_64-with-glibc2.31\
+Is CUDA available: False\
+CUDA runtime version: Could not collect\
+CUDA_MODULE_LOADING set to: N/A\
+GPU models and configuration: GPU 0: NVIDIA A100-PCIE-40GB\
+Nvidia driver version: 515.48.07\
+cuDNN version: Probably one of the following:\
+/usr/lib/x86_64-linux-gnu/libcudnn.so.8.1.0\
+/usr/lib/x86_64-linux-gnu/libcudnn_adv_infer.so.8.1.0\
+/usr/lib/x86_64-linux-gnu/libcudnn_adv_train.so.8.1.0\
+/usr/lib/x86_64-linux-gnu/libcudnn_cnn_infer.so.8.1.0\
+/usr/lib/x86_64-linux-gnu/libcudnn_cnn_train.so.8.1.0\
+/usr/lib/x86_64-linux-gnu/libcudnn_ops_infer.so.8.1.0\
+/usr/lib/x86_64-linux-gnu/libcudnn_ops_train.so.8.1.0\
+HIP runtime version: N/A\
+MIOpen runtime version: N/A\
+Is XNNPACK available: True\
+\
+CPU:\
+Architecture:                    x86_64\
+CPU op-mode(s):                  32-bit, 64-bit\
+Byte Order:                      Little Endian\
+Address sizes:                   48 bits physical, 48 bits virtual\
+CPU(s):                          24\
+On-line CPU(s) list:             0-23\
+Thread(s) per core:              1\
+Core(s) per socket:              24\
+Socket(s):                       1\
+NUMA node(s):                    1\
+Vendor ID:                       AuthenticAMD\
+CPU family:                      23\
+Model:                           1\
+Model name:                      AMD EPYC Processor (with IBPB)\
+Stepping:                        2\
+CPU MHz:                         2600.000\
+BogoMIPS:                        5200.00\
+Hypervisor vendor:               KVM\
+Virtualization type:             full\
+L1d cache:                       768 KiB\
+L1i cache:                       1.5 MiB\
+L2 cache:                        12 MiB\
+L3 cache:                        8 MiB\
+NUMA node0 CPU(s):               0-23\
+Vulnerability Itlb multihit:     Not affected\
+Vulnerability L1tf:              Not affected\
+Vulnerability Mds:               Not affected\
+Vulnerability Meltdown:          Not affected\
+Vulnerability Spec store bypass: Mitigation; Speculative Store Bypass disabled via prctl and seccomp\
+Vulnerability Spectre v1:        Mitigation; usercopy/swapgs barriers and __user pointer sanitization\
+Vulnerability Spectre v2:        Mitigation; Full AMD retpoline, IBPB conditional, STIBP disabled, RSB filling\
+Vulnerability Srbds:             Not affected\
+Vulnerability Tsx async abort:   Not affected\
+Flags:                           fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm rep_good nopl cpuid extd_apicid amd_dcm tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ssbd ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 rdseed adx smap clflushopt sha_ni xsaveopt xsavec xgetbv1 virt_ssbd arat\
+\
+Versions of relevant libraries:\
+[pip3] mypy-extensions==1.0.0\
+[pip3] numpy==1.24.3\
+[pip3] torch==2.0.1\
+[pip3] torchvision==0.15.2\
+[conda] Could not collect}
