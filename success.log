@@ -1,0 +1,81 @@
+[08.04.2024 07:47:42] INFO [erase_knowledge_model_data.py.<module>:60] Creating S3 client
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from creating-client-class.iot-data to creating-client-class.iot-data-plane
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from before-call.apigateway to before-call.api-gateway
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from request-created.machinelearning.Predict to request-created.machine-learning.Predict
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from before-parameter-build.autoscaling.CreateLaunchConfiguration to before-parameter-build.auto-scaling.CreateLaunchConfiguration
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from before-parameter-build.route53 to before-parameter-build.route-53
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from request-created.cloudsearchdomain.Search to request-created.cloudsearch-domain.Search
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from docs.*.autoscaling.CreateLaunchConfiguration.complete-section to docs.*.auto-scaling.CreateLaunchConfiguration.complete-section
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from before-parameter-build.logs.CreateExportTask to before-parameter-build.cloudwatch-logs.CreateExportTask
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from docs.*.logs.CreateExportTask.complete-section to docs.*.cloudwatch-logs.CreateExportTask.complete-section
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from before-parameter-build.cloudsearchdomain.Search to before-parameter-build.cloudsearch-domain.Search
+[08.04.2024 07:47:42] DEBUG [hooks.py._alias_event_name:482] Changing event name from docs.*.cloudsearchdomain.Search.complete-section to docs.*.cloudsearch-domain.Search.complete-section
+[08.04.2024 07:47:42] DEBUG [loaders.py._load_file:180] Loading JSON file: /usr/local/lib/python3.11/site-packages/botocore/data/endpoints.json
+[08.04.2024 07:47:43] DEBUG [loaders.py._load_file:180] Loading JSON file: /usr/local/lib/python3.11/site-packages/botocore/data/sdk-default-configuration.json
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event choose-service-name: calling handler <function handle_service_name_alias at 0x7fe9c4c063e0>
+[08.04.2024 07:47:43] DEBUG [loaders.py._load_file:180] Loading JSON file: /usr/local/lib/python3.11/site-packages/botocore/data/s3/2006-03-01/service-2.json.gz
+[08.04.2024 07:47:43] DEBUG [loaders.py._load_file:180] Loading JSON file: /usr/local/lib/python3.11/site-packages/botocore/data/s3/2006-03-01/endpoint-rule-set-1.json.gz
+[08.04.2024 07:47:43] DEBUG [loaders.py._load_file:180] Loading JSON file: /usr/local/lib/python3.11/site-packages/botocore/data/partitions.json
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event creating-client-class.s3: calling handler <function add_generate_presigned_post at 0x7fe9c4d17ce0>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event creating-client-class.s3: calling handler <function lazy_call.<locals>._handler at 0x7fe9c48262a0>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event creating-client-class.s3: calling handler <function add_generate_presigned_url at 0x7fe9c4d17a60>
+[08.04.2024 07:47:43] DEBUG [endpoint.py.create_endpoint:408] Setting s3 timeout as (60, 60)
+[08.04.2024 07:47:43] DEBUG [loaders.py._load_file:180] Loading JSON file: /usr/local/lib/python3.11/site-packages/botocore/data/_retry.json
+[08.04.2024 07:47:43] DEBUG [client.py._register_legacy_retries:285] Registering retry handlers for service: s3
+[08.04.2024 07:47:43] DEBUG [utils.py.register:1721] Registering S3 region redirector handler
+[08.04.2024 07:47:43] DEBUG [utils.py.register:1669] Registering S3Express Identity Resolver
+[08.04.2024 07:47:43] INFO [erase_knowledge_model_data.py.<module>:63] Erasing all files in the bucket
+[08.04.2024 07:47:43] INFO [erase_knowledge_model_data.py.delete_folder_contents:38] Deleting all objects with prefix 17994087fcfe4c49a1700e3ad9c017fe in bucket knowledge-models-stage
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-parameter-build.s3.ListObjects: calling handler <function set_list_objects_encoding_type_url at 0x7fe9c4c25260>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-parameter-build.s3.ListObjects: calling handler <function validate_bucket_name at 0x7fe9c4c07d80>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-parameter-build.s3.ListObjects: calling handler <function remove_bucket_from_url_paths_from_model at 0x7fe9c4c25ee0>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-parameter-build.s3.ListObjects: calling handler <bound method S3RegionRedirectorv2.annotate_request_context of <botocore.utils.S3RegionRedirectorv2 object at 0x7fe9c3f7fad0>>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-parameter-build.s3.ListObjects: calling handler <bound method ClientCreator._inject_s3_input_parameters of <botocore.client.ClientCreator object at 0x7fe9c5ae0090>>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-parameter-build.s3.ListObjects: calling handler <function generate_idempotent_uuid at 0x7fe9c4c07ba0>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-endpoint-resolution.s3: calling handler <function customize_endpoint_resolver_builtins at 0x7fe9c4c260c0>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-endpoint-resolution.s3: calling handler <bound method S3RegionRedirectorv2.redirect_from_cache of <botocore.utils.S3RegionRedirectorv2 object at 0x7fe9c3f7fad0>>
+[08.04.2024 07:47:43] DEBUG [regions.py.construct_endpoint:498] Calling endpoint provider with parameters: {'Bucket': 'knowledge-models-stage', 'Region': 'us-east-1', 'UseFIPS': False, 'UseDualStack': False, 'Endpoint': 'https://eu1-s3.virtuozzo.com', 'ForcePathStyle': True, 'Accelerate': False, 'UseGlobalEndpoint': True, 'Prefix': '17994087fcfe4c49a1700e3ad9c017fe', 'DisableMultiRegionAccessPoints': False, 'UseArnRegion': True}
+[08.04.2024 07:47:43] DEBUG [regions.py.construct_endpoint:513] Endpoint provider result: https://eu1-s3.virtuozzo.com/knowledge-models-stage
+[08.04.2024 07:47:43] DEBUG [regions.py.auth_schemes_to_signing_ctx:660] Selecting from endpoint provider's list of auth schemes: "sigv4". User selected auth scheme is: "s3v4"
+[08.04.2024 07:47:43] DEBUG [regions.py.auth_schemes_to_signing_ctx:733] Selected auth type "v4" as "s3v4" with signing context params: {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-call.s3.ListObjects: calling handler <function add_expect_header at 0x7fe9c4c24180>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-call.s3.ListObjects: calling handler <bound method S3ExpressIdentityResolver.apply_signing_cache_key of <botocore.utils.S3ExpressIdentityResolver object at 0x7fe9c4140390>>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-call.s3.ListObjects: calling handler <function add_recursion_detection_header at 0x7fe9c4c06480>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-call.s3.ListObjects: calling handler <function inject_api_version_header_if_needed at 0x7fe9c4c256c0>
+[08.04.2024 07:47:43] DEBUG [endpoint.py.make_request:114] Making request for OperationModel(name=ListObjects) with params: {'url_path': '', 'query_string': {'prefix': '17994087fcfe4c49a1700e3ad9c017fe', 'encoding-type': 'url'}, 'method': 'GET', 'headers': {'User-Agent': 'Boto3/1.34.79 md/Botocore#1.34.79 ua/2.0 os/linux#5.11.20-300.fc34.x86_64 md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.79'}, 'body': b'', 'auth_path': '/knowledge-models-stage/', 'url': 'https://eu1-s3.virtuozzo.com/knowledge-models-stage?prefix=17994087fcfe4c49a1700e3ad9c017fe&encoding-type=url', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fe9c3f6f610>, 'has_streaming_input': False, 'auth_type': 's3v4', 'encoding_type_auto_set': True, 's3_redirect': {'redirected': False, 'bucket': 'knowledge-models-stage', 'params': {'Bucket': 'knowledge-models-stage', 'Prefix': '17994087fcfe4c49a1700e3ad9c017fe', 'EncodingType': 'url'}}, 'input_params': {'Bucket': 'knowledge-models-stage', 'Prefix': '17994087fcfe4c49a1700e3ad9c017fe'}, 'signing': {'region': 'us-east-1', 'signing_name': 's3', 'disableDoubleEncoding': True}, 'endpoint_properties': {'authSchemes': [{'disableDoubleEncoding': True, 'name': 'sigv4', 'signingName': 's3', 'signingRegion': 'us-east-1'}]}}}
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event request-created.s3.ListObjects: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fe9c4133b90>>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event choose-signer.s3.ListObjects: calling handler <function set_operation_specific_signer at 0x7fe9c4c07a60>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-sign.s3.ListObjects: calling handler <function remove_arn_from_signing_path at 0x7fe9c4c26020>
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event before-sign.s3.ListObjects: calling handler <bound method S3ExpressIdentityResolver.resolve_s3express_identity of <botocore.utils.S3ExpressIdentityResolver object at 0x7fe9c4140390>>
+[08.04.2024 07:47:43] DEBUG [auth.py.add_auth:425] Calculating signature using v4 auth.
+[08.04.2024 07:47:43] DEBUG [auth.py.add_auth:426] CanonicalRequest:
+GET
+/knowledge-models-stage
+encoding-type=url&prefix=17994087fcfe4c49a1700e3ad9c017fe
+host:eu1-s3.virtuozzo.com
+x-amz-content-sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+x-amz-date:20240408T074743Z
+
+host;x-amz-content-sha256;x-amz-date
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+[08.04.2024 07:47:43] DEBUG [auth.py.add_auth:428] StringToSign:
+AWS4-HMAC-SHA256
+20240408T074743Z
+20240408/us-east-1/s3/aws4_request
+a9a8d2c93d51f7995d62f2b022aac25d2f9508451225e7c73bb048b2b47989f1
+[08.04.2024 07:47:43] DEBUG [auth.py.add_auth:430] Signature:
+16348c3a4837b81bb85b382d002a7dfcd08b002f9628f2c152caf2e5027c5f2f
+[08.04.2024 07:47:43] DEBUG [hooks.py._emit:238] Event request-created.s3.ListObjects: calling handler <function add_retry_headers at 0x7fe9c4c25e40>
+[08.04.2024 07:47:43] DEBUG [endpoint.py._do_get_response:265] Sending http request: <AWSPreparedRequest stream_output=False, method=GET, url=https://eu1-s3.virtuozzo.com/knowledge-models-stage?prefix=17994087fcfe4c49a1700e3ad9c017fe&encoding-type=url, headers={'User-Agent': b'Boto3/1.34.79 md/Botocore#1.34.79 ua/2.0 os/linux#5.11.20-300.fc34.x86_64 md/arch#x86_64 lang/python#3.11.9 md/pyimpl#CPython cfg/retry-mode#legacy Botocore/1.34.79', 'X-Amz-Date': b'20240408T074743Z', 'X-Amz-Content-SHA256': b'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', 'Authorization': b'AWS4-HMAC-SHA256 Credential=e737733732b029eeIQOC/20240408/us-east-1/s3/aws4_request, SignedHeaders=host;x-amz-content-sha256;x-amz-date, Signature=16348c3a4837b81bb85b382d002a7dfcd08b002f9628f2c152caf2e5027c5f2f', 'amz-sdk-invocation-id': b'74fc130a-4406-47bb-a14d-d203ea817a63', 'amz-sdk-request': b'attempt=1'}>
+[08.04.2024 07:47:43] DEBUG [connectionpool.py._new_conn:1019] Starting new HTTPS connection (1): eu1-s3.virtuozzo.com:443
+/usr/local/lib/python3.11/site-packages/urllib3/connectionpool.py:1061: InsecureRequestWarning: Unverified HTTPS request is being made to host 'eu1-s3.virtuozzo.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/1.26.x/advanced-usage.html#ssl-warnings
+  warnings.warn(
+[08.04.2024 07:47:44] DEBUG [connectionpool.py._make_request:474] https://eu1-s3.virtuozzo.com:443 "GET /knowledge-models-stage?prefix=17994087fcfe4c49a1700e3ad9c017fe&encoding-type=url HTTP/1.1" 200 None
+[08.04.2024 07:47:44] DEBUG [parsers.py.parse:240] Response headers: {'Server': 'nginx', 'Content-Type': 'application/xml', 'Transfer-Encoding': 'chunked', 'Connection': 'close', 'Date': 'Mon, 08 Apr 2024 07:47:44 GMT', 'x-amz-req-time-micros': '1822', 'x-amz-request-id': '80000000000000810007a5424556f161'}
+[08.04.2024 07:47:44] DEBUG [parsers.py.parse:241] Response body:
+b'<?xml version="1.0" encoding="UTF-8"?><ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>knowledge-models-stage</Name><Prefix>17994087fcfe4c49a1700e3ad9c017fe</Prefix><Marker></Marker><MaxKeys>1000</MaxKeys><IsTruncated>false</IsTruncated></ListBucketResult>'
+[08.04.2024 07:47:44] DEBUG [hooks.py._emit:238] Event needs-retry.s3.ListObjects: calling handler <botocore.retryhandler.RetryHandler object at 0x7fe9c3f83410>
+[08.04.2024 07:47:44] DEBUG [retryhandler.py.__call__:211] No retry needed.
+[08.04.2024 07:47:44] DEBUG [hooks.py._emit:238] Event needs-retry.s3.ListObjects: calling handler <bound method S3RegionRedirectorv2.redirect_from_error of <botocore.utils.S3RegionRedirectorv2 object at 0x7fe9c3f7fad0>>
+[08.04.2024 07:47:44] DEBUG [hooks.py._emit:238] Event after-call.s3.ListObjects: calling handler <function decode_list_object at 0x7fe9c4c25300>
+[08.04.2024 07:47:44] INFO [erase_knowledge_model_data.py.<module>:66] All files erased successfully
