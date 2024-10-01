@@ -1,1 +1,1 @@
-echo "hello world" > ./first.log
+echo "hello world" > ./first1.log
